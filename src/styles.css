@@ -1,1 +1,313 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* ogólne */
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+    background-color: white;
+}
+
+.offset:before {
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+
+/* .container {
+margin-left: 0;
+margin-right: 0;
+}
+
+.container-fluid {
+padding: 0px;
+}
+
+#logo {
+background-color: black;
+color: white;
+height: 50px;
+}
+*/
+
+#footer {
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+
+/* nawigacja */
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: rgb(0, 0, 0, .6)!important;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-brand img {
+    height: 2rem;
+    margin-left: 20px;
+}
+
+.navbar-nav {
+    margin-left: 15px;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbard-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #1ebba3;
+}
+
+.navbar-toggler {
+    margin-right: 15px;
+}
+
+
+/* slajdy na home */
+
+.home-inner {
+    background-image: url(assets/foto_home.png);
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+.caption h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1.3rem;
+}
+
+.btn-lg {
+    border-width: medium;
+    padding: .6 1.3rem;
+    font-size: 1.1;
+}
+
+
+/*ogólnie tabela*/
+
+#i {
+    color: black;
+}
+
+.row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form-select {
+    margin-right: 20px;
+}
+
+
+/*sekcja O nas */
+
+.narrow {
+    margin: 1.5rem auto;
+}
+
+.column-12 #o-nas-column {
+    background-color: white;
+}
+
+.jumbotron {
+    background-color: #e5e9ee;
+    margin: 1.5rem, auto;
+    padding-top: 1.8rem;
+}
+
+.narrow h1 {
+    font-size: 2.4rem;
+}
+
+
+/* sekcja datki */
+
+
+/* .narrow .col-12 .heading {
+    margin: 1rem;
+} */
+
+.jumbotron {
+    margin-bottom: 0;
+    padding: 2rem 0 3.5rem;
+}
+
+h2.heading {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: #1ebba3;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+
+/* nasi partnerzy */
+
+.fixed {
+    background-image: url(assets/nogi.jpg);
+    z-index: -1;
+}
+
+.fixed-background {
+    margin: 0, 0, 0;
+    background-color: rgb(0, 0, 0, .7);
+    color: white;
+    padding: 6rem 2rem;
+}
+
+.fixed-background h3 {
+    margin-bottom: 1.5rem;
+}
+
+.fixed-background .row {
+    font-size: 2.4rem;
+}
+
+
+/*kolory ikon */
+
+.fa-hand-holding-dollar {
+    color: #1ebba3;
+}
+
+.fa-briefcase-medical {
+    color: #1ebba3;
+}
+
+.fa-staff-aesculapius {
+    color: #1ebba3;
+}
+
+.fa-user-doctor {
+    color: #1ebba3;
+}
+
+.fa-person-breastfeeding {
+    color: #1ebba3;
+}
+
+.fa-shield-heart {
+    color: #1ebba3;
+}
+
+
+/*lokacje*/
+
+.card {
+    background-color: rgb(182, 228, 236);
+    padding: 0;
+    margin: 10px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #40474e;
+    color: white;
+    padding: 2rem 0 2rem;
+    margin-top: 1rem;
+}
+
+footer img {
+    height: 3rem;
+    margin: 1.4rem;
+}
+
+footer a {
+    color: white;
+}
+
+.fa-facebook {
+    font-size: 2rem;
+    margin: 1.2rem .5rem 0 0;
+}
+
+.fa-instagram {
+    font-size: 2rem;
+    margin: 1.2rem .5rem 0 0;
+}
+
+.fa-twitter {
+    font-size: 2rem;
+    margin: 1.2rem .5rem 0 0;
+}
+
+.fa-facebook:hover {
+    color: #1ebba3;
+}
+
+.fa-twitter:hover {
+    color: #1ebba3;
+}
+
+.fa-instagram:hover {
+    color: #1ebba3;
+}
+
+hr .socket {
+    width: 100%;
+    border-top: .4rem solid #666b71;
+    margin-top: 3rem;
+}
+
+
+/* dołącz do nas */
+
+#dolacz-do-nas #tabela {
+    border-bottom: .2rem solid #666b71;
+}
+
+#dolacz-do-nas #tabela2 {
+    border-bottom: .2rem solid #666b71;
+}
+
+#dolacz-do-nas #tabela .feature a {
+    color: black;
+    text-decoration: none;
+}
+
+#dolacz-do-nas #tabela2 .feature a {
+    color: black;
+    text-decoration: none;
+}
+
+#paypal {
+    background-color: #1ebba3;
+}

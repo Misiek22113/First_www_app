@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-xs-12 col-lg-12">
+        <form (ngSubmit)="dodajStudenta($event)">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 form-group">
+                    <label for="numer_indeksu">Numer telefonu</label>
+                    <input id="numerIndeksu" type="number" name="numerIndeksu" class="form-control" ngModel>
+                </div>
+                <div class="col-sm-12 col-md-4 form-group">
+                    <label for="Imię">Imię</label>
+                    <input id="imie" name="imie" type="text" class="form-control" ngModel>
+                </div>
+                <div class="col-sm-12 col-md-4 form-group">
+                    <label for="Nazwisko">Nazwisko</label>
+                    <input id="nazwisko" name="nazwisko" type="text" class="form-control" ngModel>
+                </div>
+                <div class="column-md-12">
+                    <select class="form-select" id="bieg" size="1">
+                        <option selected>Wybierz bieg(numer)</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                     </select>
+                </div>
+            </div>
+
+            <hr>
+            <div class="row">
+                <div class="col-xs-12 col-lg-12">
+                    <div class="row text-center">
+                        <div class="col-sm-12 col-md-4 form-group">
+                        </div>
+                        <div class="col-sm-12 col-md-4 form-group">
+                            <button class="btn btn-success" type="submit">Dodaj</button>
+                            <button class="btn btn-danger" type="reset">Usuń</button>
+                            <button class="btn btn-primary" type="button">Wyczyść</button>
+                        </div>
+                        <div class="col-sm-12 col-md-4 form-group">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="col-md-12 text-center">
+    <h2 class="heading">Twoje biegi</h2>
+    <div class="heading-underline"></div>
+</div>
+<ul>
+    <li *ngFor="let daneStudenta of studenci">
+        &nbsp; <span>{{daneStudenta.numerIndeksu}}</span> &nbsp; <span>{{daneStudenta.nazwisko}}</span> &nbsp; <span>{{daneStudenta.imie}}</span>&nbsp; <span>{{daneStudenta.bieg}}</span>
+    </li>
+</ul>
+<div>
+
+</div>
